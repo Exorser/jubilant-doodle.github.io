@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css.css">
+    <title>Игра в угадывание чисел</title>
+  </head>
+
+  <body>
+    <div class="page">
+        
+          <h1>Игра в угадывание чисел</h1>
+          <p>Мы выбрали случайное число от 1 до 100. Посмотрите, сможете ли вы угадать его за 5 ходов или меньше. Мы сообщим вам, была ли ваша догадка высокой или низкой. ПОЛУЧИ ПОЛТОС НА КАРТУ, ОТПРАВИВ СКРИН АДМИНУ</p>
+        <div class="form">
+          <label for="guessField">Введите предположение: </label>
+          <input type="number" min="1" max="100" required id="guessField" class="guessField">
+          <input type="submit" value="Отправить" class="guessSubmit">
+        </div>
+
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+        </div>
+    </div>
+      <script src="js.js"></script>
+  </body>
+</html>
